@@ -1,7 +1,7 @@
 var ontToNineteen = ["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven",
 				  "twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"];
 
-var tens = ["twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"];
+var tens = ["twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"];
 var hundreds = [0];
 
 function makeHundreds(){
@@ -37,3 +37,4 @@ for(var x=1;x<10;x++){
 	}
 }
 var oneToThousand = numberStackFull.concat(hundredToThousand);
+var result = oneToThousand.join("");
