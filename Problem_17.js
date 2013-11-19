@@ -24,15 +24,16 @@ for(var i=0;i<8;i++){
 	}
 }
 
-numberStack = ontToNineteen + numberStack;
+numberStackFull = ontToNineteen.concat(numberStack);
 var hundredToThousand=[];
 var m = 0;
 for(var x=1;x<10;x++){
 	hundredToThousand[m] = hundreds[x];
 	m++;
 	for(var y=1;y<101;y++){
-		hundredToThousand[m] = hundreds[x]+"and"+numberStack[y];
+		hundredToThousand[m] = hundreds[x]+"and"+numberStackFull[y];
 		console.log(hundredToThousand[m]);
 		m++;
 	}
 }
+var oneToThousand = numberStackFull.concat(hundredToThousand);
