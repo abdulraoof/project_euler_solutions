@@ -15,12 +15,16 @@ var numberOfDivisors = function (i) { //Check for the condition.................
             count++;
         }
     }
-        if (count > 4) {
+        if (count > 500) {
             return true;
         } else {
             return false;
         }
 };
 
+num = 1;
+while(numberOfDivisors(triangleNum(num)) === false){
+    num++;
+}
 
-alert(numberOfDivisors(triangleNum(7)));
+alert(triangleNum(num));
