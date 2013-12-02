@@ -10,11 +10,12 @@ var triangleNum = function (i) { //Triangle number generate function............
 
 var numberOfDivisors = function (i) { //Check for the condition...............................
     var count = 0;
-    for (j = 1; j < i + 1; j++) {
+    for (j = 1; j < Math.sqrt(i); j++) {
         if (i % j === 0) {
             count++;
         }
     }
+    count *= 2;
         if (count > 500) {
             return true;
         } else {
