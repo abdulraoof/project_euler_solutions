@@ -1,5 +1,6 @@
-var numberOfDigits = function (number, digits) {
-    var exp = number.toString().length - 1;
+
+var numberOfDigits = function (number, digits) { //Function to get first n digits of a number
+    var exp = number.toString().length - 1; 
     var result = [];
     for (var i = 0; i < digits; i++) {
         result.push(Math.floor(number / Math.pow(10, exp)));
@@ -110,10 +111,11 @@ var number = [37107287533902102798797998220837590246510135740250,
 72107838435069186155435662884062257473692284509516,
 20849603980134001723930671666823555245252804609722,
 53503534226472524250874054075591789781264330331690];
+
 var sum = 0;
 for(i = 0; i < number.length; i++){
     sum += number[i];
 }
 console.log(sum);
 
-alert(numberOfDigits(5.537376230390877e+51/1e+51 , 5));
+alert(numberOfDigits(sum , 10));
